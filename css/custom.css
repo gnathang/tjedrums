@@ -1,0 +1,280 @@
+
+/* GLOBAL STYLES */
+
+body {
+    background-color: white;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-family: 'Poppins';
+    color: rgb(78, 25, 0);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(153, 66, 0);
+    cursor: pointer; 
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+.logo a:hover {
+    transform: scale(1.1);
+}
+
+a,
+.logo a:hover {
+    transition: transform 0.5s ease;
+}
+
+.social img {
+    max-width: 50px;
+}
+
+.drumsticks-small {
+    max-width: 20px;
+    margin-top: 15px;
+
+}
+
+.drumsticks-big {
+    margin-top: 50px;
+    max-width: 30px;
+
+}
+
+h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    /* color:rgb(6, 72, 72); */
+    /* color: rgb(198, 122, 0); */
+    color: rgb(198, 86, 0);
+    font-size: 36px;
+    font-weight: 500;
+    text-rendering: optimizeSpeed;   
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;        
+}
+
+.bg-color-2 {
+    background-color: rgb(255, 247, 238);
+}
+
+/* WP 'featured image' wrapper */
+.wp-post-image {
+    max-width: 100%;
+    width: 100% !important;
+    height: 100% !important;
+    pointer-events: none;
+    display: inline;
+    border-radius: 75px;
+}
+
+/* WP 'featured image'  */
+a.post-thumbnail {
+    pointer-events: none;
+    display: block;
+}
+
+
+/* FONTS  */
+.anton {
+    font-family: 'Anton';
+}
+.hammersmith-one {
+    font-family: 'Hammersmith One';
+}
+.fira-sans {
+    font-family: 'Fira Sans';
+}
+.space-grotesk {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* HEADER STYLES */
+
+.site-header {
+    box-shadow: 0 5px 2px 0px gray;
+}
+
+/* HERO STYLES */
+
+.hero {
+    background-image: url('../images/playin-at-bath-carnival-b-w2-.jpeg');
+    background-size: cover;
+    background-position: 80% 10%;
+}
+
+/* Theo J Ellis */
+.hero h1 {
+    display: block;
+    font-size: 120px;
+    line-height: 1;
+    margin-top: 0px;
+    color: rgba(252, 205, 17, 0.656);
+}
+ 
+/* Theo's Titles */
+.hero h2 {
+    display: block;
+    font-size: 100px;
+    line-height: 1.1;
+    color: rgba(245, 245, 245, 0.75);
+    margin-top: 120px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    
+      
+}
+
+/* PLAYED-WITH STYLES */
+
+.played-with h3 {
+    /* color: rgb(198, 122, 0); */
+    color: rgb(198, 86, 0);
+    letter-spacing: 1.2;
+}
+
+.played-with p {
+    color: rgb(78, 25, 0);
+    letter-spacing: 0.2rem;
+    line-height: 2;
+    font-size: 30px;
+    margin: 0px;
+}
+
+/* CONTACT SECTION STYLES */
+
+.contact-links:hover {
+    color: rgb(249, 187, 0);
+}
+
+.contact-links {
+    transition: color 0.2s ease;
+}
+
+/* FOOTER STYLES  */
+
+.copyright {
+    font-size: 14px;
+}
+
+.logo-copyright img {
+    max-height: 28px;
+}
+
+/* ***************** */
+/* RESPONSIVE STYLES */
+/* ***************** */
+
+@media (max-width:1191px) {
+
+    .kamma-link {
+        display: none;
+    }
+}
+
+@media (max-width:960px) {
+
+    .wp-post-image {
+        display: inline;
+    }
+
+    .hero h1 {
+        font-size: 90px;
+        padding-top: 100px;
+    }
+
+    .hero-text h2 {
+        font-size: 80px;
+        /* line-height: 0.5rem; */
+    }
+
+    .played-with p {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width:660px) {
+
+    .played-with h3 {
+        letter-spacing: 1.1;
+        font-size: 24px
+    }
+
+    .played-with p {
+        font-size: 20px;
+    }
+    
+    .social img {
+        max-width: 40px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+
+    .drumsticks-big {
+        max-width: 20px;
+        /* max-height: 30px; */
+    }
+}
+
+
+@media (max-width:530px) {
+    
+    .hero {
+        background-image: url('../images/playin-at-bath-carnival-b-w2-.jpeg');
+        background-size: cover;
+        background-position: 60% 10%;
+    }
+    
+    .hero h1 {
+        font-size: 80px;
+        padding-top: 70px;
+    }
+
+    .hero h2 {
+        font-size: 60px;
+        margin-top: 60px !important;
+    }
+
+    .social img {
+        max-width: 35px;
+    }
+}
+
+@media (max-width:460px) {
+
+    .played-with h3 {
+        letter-spacing: 1.1;
+        font-size: 22px
+    }
+
+    .teacher {
+        display: none;
+    }
+
+    .played-with p {
+        color: rgb(78, 25, 0);
+        letter-spacing: 0.2rem;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+
+    .drumsticks-big {
+        margin-bottom: 30px;
+    }
+
+    .drumsticks-small {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .social a img {
+        max-width: 30px;
+    }
+    
+}
